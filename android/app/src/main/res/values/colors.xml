@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Apariencia clara del perfil -->
+    <color name="perfil_fondo">#F6F6F7</color>
+    <color name="perfil_tarjeta">#FFFFFF</color>
+    <color name="perfil_texto">#202024</color>
+    <color name="perfil_secundario">#72727A</color>
+    <color name="perfil_borde">#E6E6E9</color>
+
+    <!-- Fondos principales -->
+    <color name="fondo_principal">#101012</color>
+    <color name="fondo_tarjeta">#1C1C1F</color>
+    <color name="fondo_campo">#29292D</color>
+
+    <!-- Tipografía -->
+    <color name="texto_principal">#F5F5F5</color>
+    <color name="texto_secundario">#A7A7AD</color>
+
+    <!-- Botones y elementos interactivos -->
+    <color name="boton_principal">#E9E9EB</color>
+    <color name="texto_boton">#151518</color>
+    <color name="boton_secundario">#38383D</color>
+
+    <!-- Bordes y elementos decorativos -->
+    <color name="borde_suave">#45454B</color>
+    <color name="gris_neutro">#777780</color>
+
+    <!-- Estados -->
+    <color name="color_error">#F28B82</color>
+    <color name="color_exito">#8FCBA8</color>
+
+</resources>

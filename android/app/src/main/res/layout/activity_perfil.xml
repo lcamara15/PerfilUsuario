@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contenedorPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/perfil_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Encabezado del perfil -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MI ESPACIO"
+            android:textColor="@color/perfil_secundario"
+            android:textSize="12sp"
+            android:letterSpacing="0.18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:text="Mi perfil"
+            android:textColor="@color/perfil_texto"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <!-- Tarjeta de información personal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_tarjeta_perfil"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <!-- Imagen de perfil -->
+            <ImageView
+                android:id="@+id/ivFotoPerfil"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:background="@drawable/fondo_avatar"
+                android:src="@drawable/ic_usuario"
+                android:tint="@color/perfil_secundario"
+                android:padding="27dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Fotografía del perfil"/>
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/tvNombrePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre del usuario"
+                android:textColor="@color/perfil_texto"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <!-- Correo electrónico -->
+            <TextView
+                android:id="@+id/tvCorreoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="correo@ejemplo.com"
+                android:textColor="@color/perfil_secundario"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+            <!-- Cambiar la fotografía -->
+            <Button
+                android:id="@+id/btnCambiarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/perfil_texto"
+                android:text="Cambiar fotografía"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <!-- Opciones para la fotografía -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/fondo_tarjeta_perfil"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotografía de perfil"
+                android:textColor="@color/perfil_texto"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Cámara -->
+            <TextView
+                android:id="@+id/tvAbrirCamara"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Tomar una fotografía    ›"
+                android:textColor="@color/perfil_texto"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/perfil_borde"/>
+
+            <!-- Galería -->
+            <TextView
+                android:id="@+id/tvAbrirGaleria"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Elegir de galería    ›"
+                android:textColor="@color/perfil_texto"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Cierre de sesión -->
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/perfil_tarjeta"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/perfil_texto"
+            android:textSize="15sp"/>
+
+        <!-- Pie de pantalla -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="PERFIL USUARIO"
+            android:textColor="@color/perfil_secundario"
+            android:textSize="11sp"
+            android:letterSpacing="0.18"/>
+
+    </LinearLayout>
+
+</ScrollView>
